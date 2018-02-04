@@ -12,6 +12,7 @@ Using a notebook feature to demonstrate basic file Read-Write operations in Node
      1. node app.js add --title="Pro Git" --body="Amazon Kindle Free eBook"
       
       App Response:
+      
         Note Added Successfully
         --
         Title:Pro Git 
@@ -20,6 +21,7 @@ Using a notebook feature to demonstrate basic file Read-Write operations in Node
      2.  node app.js list
      
      App Response:
+     
         Printing 2 note(s).
         --
         Title:Pro Git
