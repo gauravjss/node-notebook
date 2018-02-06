@@ -56,3 +56,6 @@ Using a notebook feature to demonstrate basic file Read-Write operations in Node
           --help       Show help                              [boolean]
           --title, -t  Title of note                         [required]
           --body, -b   Body of the new note                  [required]
+
+
+*** Playground Directory is for playing around with code and is not related to this app.
