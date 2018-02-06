@@ -34,6 +34,7 @@ Using a notebook feature to demonstrate basic file Read-Write operations in Node
    Update [02/06/2018]: After adding command function in yargs: Help is Available.
 
      a. Command : node app.js --help
+
         Result:
 
         Commands:
@@ -46,6 +47,7 @@ Using a notebook feature to demonstrate basic file Read-Write operations in Node
           --help  Show help
 
      b. Command: node app.js add --help
+
         Result:
 
         app.js add
