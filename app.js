@@ -3,9 +3,33 @@ const fs = require('fs');
 // Loading 3rd party Library
 const _ = require('lodash');
 const yargs =  require('yargs');
-const argv = yargs.argv;
+const titleOptions = {
+    describe: 'Title of note',
+        demand: true,
+        alias: 't'
+};
+const bodyOptions = {
+    describe: 'Body of the new note',
+    demand: true,
+    alias:'b'
+}
+const argv = yargs
+    .command('add','Add a new note',{
+        title:titleOptions,
+        body:bodyOptions
+    })
+    .command('list','List of all notes')
+    .command('read','Read a Note',{
+        title:titleOptions
+    })
+    .command('remove','Remove an existing note',{
+        title:titleOptions
+    })
+    .help()
+    .argv;
 // Loading our custom files
 const notes = require('./notes.js');
+
 
 if(argv._[0] === 'add'){
   var note = notes.addNote(argv.title,argv.body);

@@ -30,3 +30,27 @@ Using a notebook feature to demonstrate basic file Read-Write operations in Node
         Title:Pro Git2 
         Body:Amazon Kindle Free eBook
 
+
+   Update [02/06/2018]: After adding command function in yargs: Help is Available.
+
+     a. Command : node app.js --help
+        Result:
+
+        Commands:
+          add     Add a new note
+          list    List of all notes
+          read    Read a Note
+          remove  Remove an existing note
+
+        Options:
+          --help  Show help
+
+     b. Command: node app.js add --help
+        Result:
+
+        app.js add
+
+        Options:
+          --help       Show help                              [boolean]
+          --title, -t  Title of note                         [required]
+          --body, -b   Body of the new note                  [required]
